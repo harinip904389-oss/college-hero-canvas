@@ -4,19 +4,22 @@ import { useState, useEffect } from "react";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&q=80",
-    title: "Welcome to Madras College",
-    subtitle: "Excellence in Education Since 1889",
+    image: "https://images.unsplash.com/photo-1562774053-701939374585?w=1920&q=80",
+    title: "Madras College",
+    subtitle: "Inspiring Minds, Shaping Futures",
+    description: "A Premier Institution of Higher Learning",
   },
   {
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80",
-    title: "Shape Your Future",
-    subtitle: "World-Class Education for Tomorrow's Leaders",
+    title: "Academic Excellence",
+    subtitle: "Empowering Students Since 1889",
+    description: "Quality Education for All",
   },
   {
-    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1920&q=80",
-    title: "Innovation & Excellence",
-    subtitle: "Join Our Community of Learners",
+    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&q=80",
+    title: "Modern Campus",
+    subtitle: "State-of-the-Art Facilities",
+    description: "Building Tomorrow's Leaders Today",
   },
 ];
 
@@ -48,21 +51,26 @@ const Hero = () => {
           >
             <div className="absolute inset-0 bg-black/50" />
           </div>
-          <div className="relative z-10 flex h-full items-center justify-center px-4">
-            <div className="text-center text-white">
-              <h1 className="mb-4 text-5xl font-bold md:text-7xl animate-in fade-in slide-in-from-bottom-4 duration-1000">
-                {slide.title}
-              </h1>
-              <p className="mb-8 text-xl md:text-2xl animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
-                {slide.subtitle}
-              </p>
-              <div className="flex gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
-                  Admissions
-                </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
-                  Learn More
-                </Button>
+          <div className="relative z-10 flex h-full items-center">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl text-white">
+                <h1 className="mb-3 text-6xl font-bold md:text-7xl animate-in fade-in slide-in-from-bottom-4 duration-1000">
+                  {slide.title}
+                </h1>
+                <p className="mb-2 text-2xl md:text-3xl font-semibold animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
+                  {slide.subtitle}
+                </p>
+                <p className="mb-8 text-lg md:text-xl animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
+                  {slide.description}
+                </p>
+                <div className="flex gap-4 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
+                  <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold">
+                    Admissions Open
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold">
+                    Explore Courses
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
