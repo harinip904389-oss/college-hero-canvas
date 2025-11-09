@@ -23,14 +23,14 @@ const Navigation = () => {
               <span className="text-2xl font-bold text-white">MC</span>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-primary">Madras College</h1>
+              <h1 className="text-2xl font-bold text-primary">Madras Engineering <College></College></h1>
               <p className="text-xs text-muted-foreground">Affiliated to University of Education</p>
             </div>
           </div>
 
           <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a
+              <aMadras Engineering College 
                 key={link.name}
                 href={link.href}
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors relative group"

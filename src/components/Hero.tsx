@@ -5,12 +5,8 @@ import { useState, useEffect } from "react";
 const slides = [
   {
     image: "https://images.unsplash.com/photo-1562774053-701939374585?w=1920&q=80",
-    title: "Madras College",
-    subtitle: "Inspiring Minds, Shaping Futures",
-    description: "A Premier Institution of Higher Learning",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80",
+    title: "Madras Engineering college",
+    subtitle: "Inspiring Minds, Shaping Futures",,
     title: "Academic Excellence",
     subtitle: "Empowering Students Since 1889",
     description: "Quality Education for All",
